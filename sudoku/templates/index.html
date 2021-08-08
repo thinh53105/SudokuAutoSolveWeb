@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku Auto Solve</title>
+</head>
+<body>
+<h1>Sudoku Auto Solve</h1>
+
+<div>
+    <h2>Upload image</h2>
+    <hr>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <div>
+            <input type="file" class="custom-file-input" name="image" id="image">
+        </div>
+        <button type="submit">Upload image</button>
+    </form>
+</div>
+<div>
+    <h2>Image uploaded:</h2>
+    <img id="picture" src="data:image/jpeg;base64,{{ org_img }}" width="600px" height="500px">
+</div>
+
+<div>
+    <h2>Sudoku Solver:</h2>
+    <img id="picture" src="data:image/jpeg;base64,{{ solved_img }}" width="600px" height="500px">
+</div>
+
+</body>
+</html>
